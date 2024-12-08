@@ -1,0 +1,197 @@
+html, body {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: .005em;
+    scroll-behavior: smooth;
+    background-color: #f4f1e1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 700; /* Для заголовків використовуємо жирний */
+    letter-spacing: 0.005em;
+    line-height: 1.2;
+    margin: 0 0 .5em;
+    text-align: center;
+}
+
+h1 { font-size: 2.2rem; color: #3a3a3a; }
+h2 { font-size: 1.6rem; color: #5a4f42; font-weight: 700; } /* Для заголовків секцій жирний шрифт */
+h3 { font-size: 1.4rem; color: #7e6e59; font-weight: 500; }
+
+p {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: .75em;
+    color: #6a5d4b;
+    font-weight: 400; /* Для основного тексту регулярний */
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box img {
+    display: block;
+    width: 100%;
+}
+
+.cols {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    flex: 1 1 45%;
+}
+
+.col-2 {
+    padding-left: 20px;
+    padding-right: 20px; /* Додаємо відступ праворуч, щоб вирівняти */
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 100%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c1a192;
+    padding: 10px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-icon {
+        display: block;
+    }
+}
+
+.swiper-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.swiper-slide {
+    width: 300px; /* Встановлює ширину кожного слайду */
+    height: 300px; /* Встановлює висоту кожного слайду */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Зберігає пропорції зображення і заповнює блок */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 45px; 
+    height: 45px; 
+}
+
+footer {
+    background-color: #5c4033 !important; /* Темно-коричневий пастельний */
+    padding: 20px;
+}
+
+footer h4 {
+    color: #fff;
+}
+
+/* СТИЛІ ДЛЯ ПРОГРЕС-БАРІВ */
+
+.skills-list {
+    margin-bottom: 40px; /* Відступ між списком навичок та прогрес-барами */
+}
+
+.skill-item {
+    font-size: 1.1rem;
+    color: #5a4f42;
+    font-weight: 400;
+    margin-bottom: 20px; /* Відступ між елементами списку */
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill label {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #5a4f42;
+}
+
+progress {
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+    appearance: none;
+}
+
+progress[value] {
+    background-color: #ddd;
+    color: #5c4033;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #f4f1e1;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #c1a192;
+}
+
+progress[value]::-moz-progress-bar {
+    background-color: #c1a192;
+}
